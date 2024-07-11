@@ -1,0 +1,25 @@
+body{display: flex;
+justify-content: center;
+height: 100vh;
+margin: 0;
+background-color: black;
+
+}
+
+.rainbow-circle{
+    width: 200px;
+    border: 200px;
+    border-radius: 50%;
+    background: conic-gradient(red,orange,yellow,green,blue,indigo,violet,rgb(255, 0, 170));
+    animation: rotate 7s linear infinite;
+
+    @keyframes rotate {
+        0%{
+            transform:rotate(0deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+        
+    }
+}
